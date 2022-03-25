@@ -7,13 +7,19 @@ The files in this repository were used to configure the network depicted below.
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the yml file may be used to install only certain pieces of it, such as Filebeat.
 
 Config Files >
+
 -[ansible.cfg ](/Ansible/ansible.cfg)
+
 -[install_elk.yml ](/Ansible/install-elk.yml)
+
 -[filebeat-config.yml ](/Ansible/files/filebeat-config.yml)
+
 -[metric-beat.yml ](/Ansible/files/metricbeat-config.yml)
 
 Playbook Files >
+
 -[filebeat-config.yml ](/Ansible/role/filebeat-playbook.yml)
+
 -[metric-beat.yml ](/Ansible/files/metricbeat-playbook.yml)
 
 This document contains the following details:
@@ -45,7 +51,7 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 Metricbeat records meticts and statistics from the systems and services running on a machine.
 
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
+#_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
 | Name          | Function          | IP Address                               | Operating System |
 |---------------|-------------------|------------------------------------------|------------------|
