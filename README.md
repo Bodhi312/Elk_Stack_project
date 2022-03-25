@@ -2,11 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-<<<<<<< HEAD
 ![Elk Network Diagram](/Images/Cloud_Network_diag_Redteam_Jeremy_Bird.png)
-=======
-![ELk Network Diagaram](/Images/Cloud_Network_diag_Redteam_Jeremy_Bird.png)
->>>>>>> b1e5e4af42031fd4ddcff9187b38d1b9bf8e3375
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the yml file may be used to install only certain pieces of it, such as Filebeat.
 
