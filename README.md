@@ -8,19 +8,19 @@ These files have been tested and used to generate a live ELK deployment on Azure
 
 Config Files >
 
--[ansible.cfg ](/Ansible/ansible.cfg)
+	-[ansible.cfg ](/Ansible/ansible.cfg)
 
--[install_elk.yml ](/Ansible/install-elk.yml)
+	-[install_elk.yml ](/Ansible/install-elk.yml)
 
--[filebeat-config.yml ](/Ansible/files/filebeat-config.yml)
+	-[filebeat-config.yml ](/Ansible/files/filebeat-config.yml)
 
--[metric-beat.yml ](/Ansible/files/metricbeat-config.yml)
+	-[metricbeat-config.yml ](/Ansible/files/metricbeat-config.yml)
 
 Playbook Files >
 
--[filebeat-config.yml ](/Ansible/role/filebeat-playbook.yml)
+	-[filebeat-config.yml ](/Ansible/role/filebeat-playbook.yml)
 
--[metric-beat.yml ](/Ansible/files/metricbeat-playbook.yml)
+	-[metric-beat.yml ](/Ansible/files/metricbeat-playbook.yml)
 
 This document contains the following details:
 - Description of the Topology
