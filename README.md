@@ -93,8 +93,11 @@ The playbook implements the following tasks:
 - Picked which docker contianer to use and specified what ports that the ELK runs on
 	Published_ports:
           -  5601:5601
+		  
           -  9200:9200
+		  
           -  5044:5044
+		  
 - Ensured Docker service wsa enabled on reboots of the instance.
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
