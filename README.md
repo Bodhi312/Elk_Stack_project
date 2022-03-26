@@ -112,19 +112,41 @@ We have installed the following Beats on these machines:
 - Metricbeat
 
 These Beats allow us to collect the following information from each machine:
-- _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
+- Filebeat - collected the log infromation from the web servers Web-1 and Web-2 <br>
+- Metricbeat - collect infromation of ssystem and services running on the machine. 
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the _____ file to _____.
-- Update the _____ file to include...
-- Run the playbook, and navigate to ____ to check that the installation worked as expected.
+- Copy the Playbook files to the Ansible control node. Copied the files into /etc/asnible/roles
+-[filebeat-config.yml ](/Ansible/role/filebeat-playbook.yml)
 
-_TODO: Answer the following questions to fill in the blanks:_
-- _Which file is the playbook? Where do you copy it?_
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
-- _Which URL do you navigate to in order to check that the ELK server is running?
+-[metric-beat.yml ](/Ansible/files/metricbeat-playbook.yml)
 
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+- Update the hosts file to include to include the machines in scope:<BR>
+
+[webservers]<br>
+10.0.0.5 ansible_python_interpreter=/usr/bin/python3<BR>
+10.0.0.8 ansible_python_interpreter=/usr/bin/python3<BR>
+
+Also update the two config files to include any settings: <br> 
+-[filebeat-config.yml ](/Ansible/files/filebeat-config.yml)<br>
+
+-[metricbeat-config.yml ](/Ansible/files/metricbeat-config.yml)<br>
+
+If you are needing to run on specific servers be sure to specify in teh config what section of the host file you want run it on. ex webservers or elk
+
+- Run the playbook, and navigate to Kibana to check that the installation worked as expected. You can do this by navigating to the http://20.228.212.129:5601/app/kibana#/home
+
+From there you can see if the beats are running by going to the following: <br>
+-Filebeat Kibana Home > Add log data button > System logs> system logs dashboard. <br>
+-Metricbeat Kibana Home > Add metic data button > docker metrics > Docker metics dashboard.  <br>
+
+With both the config and playbook files ready to go you can execute the commands by running > <BR>
+	-Filebeat > ansible-playbook fbeat-playbook.yml
+	-Metricbeat > ansible-playbook metricbeat-playbook.yml
+
+If updates are neede changes to the config file will need to be run. 
+
+
