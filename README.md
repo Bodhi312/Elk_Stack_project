@@ -119,7 +119,7 @@ These Beats allow us to collect the following information from each machine:
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the Playbook files to the Ansible control node. Copied the files into /etc/asnible/roles
+- Copy the Playbook files to the Ansible control node. Copied the files into /etc/asnible/roles<br>
 -[filebeat-config.yml ](/Ansible/role/filebeat-playbook.yml)
 
 -[metric-beat.yml ](/Ansible/files/metricbeat-playbook.yml)
