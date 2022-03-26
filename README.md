@@ -8,7 +8,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
 
 Config Files >
 
--[ansible.cfg ](/Ansible/ansible.cfg)
+-[ansible.cfg ](/Ansible/Ansible.cfg)
 
 -[install_elk.yml ](/Ansible/install-elk.yml)
 
