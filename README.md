@@ -90,11 +90,11 @@ The playbook implements the following tasks:
 - Installed docker.io
 - Installed python3 
 - Increased the virtual memory
-- Picked which docker contianer to use and specified what ports that the ELK runs on
-		Published_ports:
-			  -  5601:5601
-			  -  9200:9200
-			  -  5044:5044
+- Picked which docker contianer to use and specified what ports that the ELK runs on <br>
+		Published_ports:<br>
+			  -  5601:5601<br>
+			  -  9200:9200<br>
+			  -  5044:5044<br>
 		  
 - Ensured Docker service wsa enabled on reboots of the instance.
 
