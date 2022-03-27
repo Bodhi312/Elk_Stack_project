@@ -112,7 +112,7 @@ We have installed the following Beats on these machines:<br>
 
 These Beats allow us to collect the following information from each machine:
 - Filebeat - collected the log infromation from the web servers Web-1 and Web-2 <br>
-- Metricbeat - collect infromation of ssystem and services running on the machine. 
+- Metricbeat - collect infromation of system and services running on the machine. 
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
