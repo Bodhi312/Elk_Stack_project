@@ -1,6 +1,6 @@
 ## Automated ELK Stack Deployment
 
-The files in this repository were used to configure the network depicted below.
+The files in this repository were used to configure the network depicted below with in Microsoft's Azure.
 
 ![Elk Network Diagram](/Images/Cloud_Network_diag_Redteam_Jeremy_Bird.png)
 
@@ -37,16 +37,14 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 
 Load balancing ensures that the application will be highly available, in addition to restricting in bound traffic to the network.
 
-- What aspect of security do load balancers protect? 
-Load balancer can seemless distribute traffic to a website and spread the load over multiple severs ensuring high availability. The load balancer sits offers security by sitting in between the client and the server and you can apply various controls and rules on the load balancer. This adds an addtional layer of security.
+Load balancer can seamlessly distribute traffic to a website and spread the load over multiple severs ensuring high availability. The load balancer sits offers security by sitting in between the client and the server and you can apply various controls and rules on the load balancer. This adds an addtional layer of security.
 
-- What is the advantage of a jump box?
-A jump box is a secure computer that has resticted access to connect to it. This is the computer admins would typically log into before making any administration to any of the other machines in the network.
+A jump box is a secure computer that has restricted access to connect to it. This is the computer admins would typically log into before making any administration to any of the other machines in the network.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the logs and system traffic.
 
-- Filebeat watchs for system logs and collects log events.<br>
-- Metricbeat records meticts and statistics from the systems and services running on a machine.
+- Filebeat watches for system logs and collects log events.<br>
+- Metricbeat records metricts and statistics from the systems and services running on a machine.
 
 The configuration details of each machine may be found below.
 
@@ -81,19 +79,19 @@ A summary of the access policies in place can be found in the table below.
 
 ### Elk Configuration
 
-Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because it allows admins a way to automate configurations.  This ensures that when Ansible is run on addtinoal machines they are configure in the same way. You can also use Ansible to update installed packages agian ensuring the configurations are uniform and repeatable.
+Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because it allows admins a way to automate configurations.  This ensures that when Ansible is run on additional machines they are configure in the same way. You can also use Ansible to update installed packages again ensuring the configurations are uniform and repeatable.
 
 The playbook implements the following tasks:
 - Installed docker.io
 - Installed python3 
 - Increased the virtual memory
-- Picked which docker contianer to use and specified what ports that the ELK runs on <br>
+- Picked which docker container to use and specified what ports that the ELK runs on <br>
 		Published_ports:<br>
 			  -  5601:5601<br>
 			  -  9200:9200<br>
 			  -  5044:5044<br>
 		  
-- Ensured Docker service wsa enabled on reboots of the instance.
+- Ensured Docker service was enabled on reboots of the instance.
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
@@ -109,8 +107,8 @@ We have installed the following Beats on these machines:<br>
 - Metricbeat
 
 These Beats allow us to collect the following information from each machine:
-- Filebeat - collected the log infromation from the web servers Web-1 and Web-2 <br>
-- Metricbeat - collect infromation of system and services running on the machine. 
+- Filebeat - collected the log information from the web servers Web-1 and Web-2 <br>
+- Metricbeat - collect information of system and services running on the machine. 
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
