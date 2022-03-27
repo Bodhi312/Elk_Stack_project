@@ -44,11 +44,11 @@ Load balancer can seemless distribute traffic to a website and spread the load o
 A jump box is a secure computer that has resticted access to connect to it. This is the computer admins would typically log into before making any administration to any of the other machines in the network.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the logs and system traffic.
-- What does Filebeat watch for?
-	Filebeat watchs for system logs and collects log events.
 
-- What does Metricbeat record?
-Metricbeat records meticts and statistics from the systems and services running on a machine.
+	- Filebeat watchs for system logs and collects log events.<br>
+
+
+	- Metricbeat records meticts and statistics from the systems and services running on a machine.
 
 The configuration details of each machine may be found below.
 
