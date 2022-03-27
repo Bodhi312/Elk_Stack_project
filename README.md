@@ -45,10 +45,8 @@ A jump box is a secure computer that has resticted access to connect to it. This
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the logs and system traffic.
 
-	- Filebeat watchs for system logs and collects log events.<br>
-
-
-	- Metricbeat records meticts and statistics from the systems and services running on a machine.
+- Filebeat watchs for system logs and collects log events.<br>
+- Metricbeat records meticts and statistics from the systems and services running on a machine.
 
 The configuration details of each machine may be found below.
 
