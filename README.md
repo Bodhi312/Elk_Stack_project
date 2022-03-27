@@ -145,6 +145,6 @@ With both the config and playbook files ready to go you can execute the commands
 	-Filebeat > ansible-playbook fbeat-playbook.yml
 	-Metricbeat > ansible-playbook metricbeat-playbook.yml
 
-If updates are neede changes to the config file will need to be run. 
+If updates are needed changes to the config file will need to be run. 
 
 
