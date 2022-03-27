@@ -136,12 +136,12 @@ If you are needing to run on specific servers be sure to specify in teh config w
 - Run the playbook, and navigate to Kibana to check that the installation worked as expected. You can do this by navigating to the http://20.228.212.129:5601/app/kibana#/home
 
 From there you can see if the beats are running by going to the following: <br>
--Filebeat Kibana Home > Add log data button > System logs> system logs dashboard. <br>
--Metricbeat Kibana Home > Add metic data button > docker metrics > Docker metics dashboard.  <br>
+- Filebeat Kibana Home > Add log data button > System logs> system logs dashboard. <br>
+- Metricbeat Kibana Home > Add metic data button > docker metrics > Docker metics dashboard.  <br>
 
 With both the config and playbook files ready to go you can execute the commands by running > <BR>
-	- Filebeat > ansible-playbook fbeat-playbook.yml
-	- Metricbeat > ansible-playbook metricbeat-playbook.yml
+- Filebeat > ansible-playbook fbeat-playbook.yml
+- Metricbeat > ansible-playbook metricbeat-playbook.yml
 
 If updates are needed changes to the config file will need to be run. 
 
