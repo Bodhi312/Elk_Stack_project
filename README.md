@@ -140,8 +140,8 @@ From there you can see if the beats are running by going to the following: <br>
 -Metricbeat Kibana Home > Add metic data button > docker metrics > Docker metics dashboard.  <br>
 
 With both the config and playbook files ready to go you can execute the commands by running > <BR>
-	-Filebeat > ansible-playbook fbeat-playbook.yml
-	-Metricbeat > ansible-playbook metricbeat-playbook.yml
+	- Filebeat > ansible-playbook fbeat-playbook.yml
+	- Metricbeat > ansible-playbook metricbeat-playbook.yml
 
 If updates are needed changes to the config file will need to be run. 
 
